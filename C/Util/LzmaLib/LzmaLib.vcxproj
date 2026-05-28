@@ -35,37 +35,43 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset Condition="Exists('$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\v145\Toolset.props')">v145</PlatformToolset>
+    <PlatformToolset Condition="'$(PlatformToolset)' == ''">v143</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset Condition="Exists('$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\v145\Toolset.props')">v145</PlatformToolset>
+    <PlatformToolset Condition="'$(PlatformToolset)' == ''">v143</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset Condition="Exists('$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\v145\Toolset.props')">v145</PlatformToolset>
+    <PlatformToolset Condition="'$(PlatformToolset)' == ''">v143</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset Condition="Exists('$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\v145\Toolset.props')">v145</PlatformToolset>
+    <PlatformToolset Condition="'$(PlatformToolset)' == ''">v143</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset Condition="Exists('$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\v145\Toolset.props')">v145</PlatformToolset>
+    <PlatformToolset Condition="'$(PlatformToolset)' == ''">v143</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset Condition="Exists('$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\v145\Toolset.props')">v145</PlatformToolset>
+    <PlatformToolset Condition="'$(PlatformToolset)' == ''">v143</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
